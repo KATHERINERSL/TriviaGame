@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- Custom -->
+    <script defer src="assets/javascript/app.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Trivia game</title>
 </head>
 <body>
@@ -12,6 +19,52 @@
  <!--create container with 4 rows and 1 column each.-->
  <!-- within container is where the game works-->
  <!-- top and bottom sticky footer-->
-<script src="assets/javascript/app.js"></script>   
+
+ <h1>Totally Trivial Trivia</h1>
+ <button class="start-button">Start</button>
+
+ <div id="quiz">
+    <h3>Time Remaining: <span id="time"></span> Seconds</h3>
+     <div id="question-section">
+         <h2 id="qLabel">Question</h2>
+         <button>Option 1</button>
+         <button>Option 2</button>
+         <button>Option 3</button>
+         <button>Option 4</button>
+     </div>
+ </div>
+
+ 
+ <!-- <div class="stats-section"></div> -->
+
+
+
+
+ <!-- 
+    "Pages"
+
+    1. Start
+
+    Timer:
+        2. Question
+        3. Feedback
+            - Correct
+                * Message: Correct!
+                * Gif
+            
+            - Wrong
+                * Message
+                * Correct Answer
+                * Gif
+
+        5. Stats Pages
+            Title
+            Correct count
+            Incorrect count
+            Unanswered Count
+
+            Button -> Start Over
+  -->
+   
 </body>
 </html>

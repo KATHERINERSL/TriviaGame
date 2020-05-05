@@ -10,3 +10,40 @@
 
 // after each question is completed by user, the page loads to next multiple choice question with the 30 sec timer starting over.
 
+var time = 5;
+
+var startButton = $('.start-button');
+var quizSection = $('#quiz');
+var questionSection = $('#question-section');
+var timeLabel = $('#time');
+var questionLabel = $('#qLabel')
+
+startButton.click(function() {
+  startButton.toggle();
+  quizSection.toggle();
+  showQuestion();
+})
+
+function showQuestion() {
+  time = 5;
+  timeLabel.html(time);
+
+
+
+  // Pick a question
+  questionLabel.html("Question...");
+
+
+  var timer = setInterval(function() {
+    time--;
+
+    if(time < 0) {
+      clearInterval(timer);
+      showQuestion()
+    }
+
+
+    timeLabel.html(time);
+  }, 1000)
+}
+
