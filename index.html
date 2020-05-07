@@ -19,19 +19,23 @@
  <!--create container with 4 rows and 1 column each.-->
  <!-- within container is where the game works-->
  <!-- top and bottom sticky footer-->
+ <div class="container">
 
  <h1>Totally Trivial Trivia</h1>
  <button class="start-button">Start</button>
+ <button class="button">Sample Button</button>
 
  <div id="quiz">
     <h3>Time Remaining: <span id="time"></span> Seconds</h3>
      <div id="question-section">
          <h2 id="qLabel">Question</h2>
-         <button>Option 1</button>
-         <button>Option 2</button>
-         <button>Option 3</button>
-         <button>Option 4</button>
+         <button id='opt1'>Option 1</button>
+         <button id='opt2'>Option 2</button>
+         <button id='opt3'>Option 3</button>
+         <button id='opt4'>Option 4</button>
      </div>
+     <hr>
+     <div id="response"></div>
  </div>
 
  
@@ -65,6 +69,6 @@
 
             Button -> Start Over
   -->
-   
+</div> 
 </body>
 </html>
