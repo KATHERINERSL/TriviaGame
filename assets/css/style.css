@@ -1,12 +1,32 @@
 body {
-  text-align: center
+  background-image: url("../images/nimages.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
 }
 
-#question-section button {
-  display: block;
-  margin: 5px auto;
+.text-muted{
+  color: blue;
 }
+.last-seconds{
+  color:red;
+}
+.jumbotron {
+  background-color: pink;
+  border: 1px solid black;
+}
+#start {
+  position: relative;
+  margin-left: 550px;
+  border: 1px solid black;
+}
+#question {
+  position: relative;
+  margin-left: 50px;
 
-#quiz {
-  display: none;
+}
+#options {
+  position: relative;
+  margin: 50px 50px 0 425px;
 }

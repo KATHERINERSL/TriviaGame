@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BootStrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <!-- Custom -->
-    <script defer src="assets/javascript/app.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Trivia game</title>
-</head>
-<body>
- <!--create a backround image outside of the container possibly in css-->
- <!--create container with 4 rows and 1 column each.-->
- <!-- within container is where the game works-->
- <!-- top and bottom sticky footer-->
- <div class="container">
-
- <h1>Totally Trivial Trivia</h1>
- <button class="start-button">Start</button>
- <button class="button">Sample Button</button>
-
- <div id="quiz">
-    <h3>Time Remaining: <span id="time"></span> Seconds</h3>
-     <div id="question-section">
-         <h2 id="qLabel">Question</h2>
-         <button id='opt1'>Option 1</button>
-         <button id='opt2'>Option 2</button>
-         <button id='opt3'>Option 3</button>
-         <button id='opt4'>Option 4</button>
-     </div>
-     <hr>
-     <div id="response"></div>
- </div>
-
- 
- <!-- <div class="stats-section"></div> -->
-
-
-
-
- <!-- 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Trivia Game - Advanced</title>
+    <!-- 
     "Pages"
-
     1. Start
-
     Timer:
         2. Question
         3. Feedback
             - Correct
                 * Message: Correct!
                 * Gif
-            
             - Wrong
                 * Message
                 * Correct Answer
                 * Gif
-
         5. Stats Pages
             Title
             Correct count
             Incorrect count
             Unanswered Count
-
             Button -> Start Over
   -->
-</div> 
+</head>
+
+<body>
+    <div class="--container">
+        <div class="header text-center clearfix">
+            <h1 class="text-muted">Disney Trivia Game!</h1>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+
+            <div class="container-fluid">
+                <div id="game">
+                    <h2>Disney Trivia Game</h2>
+                    <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+                    <p id="question" class="lead"></p>
+                </div>
+                <div id="results">
+                </div>
+
+                <div class="row">
+                    <div id="choices" class="text-center">
+                        <button id="start" class="btn btn-info btn-lg">Start Game</button>
+                        <div id="options">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- TRIVIA APP JS -->
+    <script src="./assets/javascript/app.js"></script>
 </body>
+
 </html>
